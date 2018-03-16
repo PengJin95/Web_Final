@@ -1,0 +1,284 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 4, 2017, 3:48:21 PM
+    Author     : wangshuang
+*/
+body{
+    background: url(http://subtlepatterns.com/patterns/scribble_light.png);
+    margin: 0;
+}
+#poster{
+    height:630px;
+    position: absolute;
+    width:100%;
+    background-color: black;
+    overflow:hidden;
+    transform: skewY(-2.2deg);
+    transform-origin:0 0;
+    z-index:-1;
+}
+#movie{
+    width:100%;
+    opacity: 0.5;
+    z-index:0; 
+    position: absolute;
+}
+#profilebox{
+    height:700px;
+    width:35%;
+    overflow:hidden;
+   z-index:1;
+}
+#profile{
+    height:450px;
+    width:319px;
+    position:relative;
+    margin-top: 250px;
+    margin-left: 73px;
+    z-index:1;
+}
+#rightBox{
+    height:800px;
+    width:63%;
+}
+.sameRow{
+    display: inline-block;
+     margin: 0px;
+}
+#rightTopBox{
+    position: relative;
+    margin-top:0px;
+    height: 300px;
+    width:100%;
+}
+#basicInfo{
+   
+    width:520px;
+    position: relative;
+    margin-top:350px;
+    /*same as the profilebox top*/
+    margin-left:65px;
+}
+#rightBottomBox{
+    height:197px;
+    width:100%;
+}
+#description{
+    width:520px;
+    height:100%;
+    position: relative;
+    margin-top: 3px;
+    margin-left:65px;
+    overflow: auto;
+}
+#title{
+    font-size: 60px;
+     font-family:'Raleway',sansserif;
+  color: whitesmoke;
+
+}
+
+#basicInfo{
+    font-size:20px;
+   font-weight: 300;
+    margin-bottom: 10px;
+   
+    color:lightcyan;
+}
+#basicInfo b{
+    font-size:20px;
+   font-weight: 300;
+    margin-bottom: 10px;
+    color:lightcyan;
+}
+#description b{
+    font-size:25px;
+   font-weight: 300;
+    margin-bottom: 10px;
+    color:lightslategray;
+}
+#intro{
+
+  font-size: 16px;
+  line-height: 26px;
+  color: #B1B0AC;
+}
+#nextBx{
+    position:relative;
+    margin-left:73px;
+    width:80%;
+}
+#reviewT{
+    margin-top:35px;
+
+    
+}
+#reviewT b{
+font-size:25px;
+   font-weight: 300;
+    color:lightslategray;
+}
+#userOPRT{
+    width:319px;
+    position:relative;
+    margin-top: 20px;
+    margin-left: 73px;
+}
+#CoverLr{
+  display: none;
+  background-color:rgba(10, 10, 11, 0.65);
+  position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#commendBx{
+  position: absolute;   
+   top: 50%; 
+  left: 50%;   
+  transform: translate(-50%, -50%); 
+  width:600px;
+  height:300px;
+  background-color:rgba(84, 84, 81, 0.7);
+  border: 2px solid #ccc;;
+  border-radius: 8px;
+}
+
+#coverLr2{
+  display: none;
+  background-color:rgba(0, 0, 200, 0.2);
+  position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+#videoBx{
+   position: absolute;   
+   top: 50%; 
+  left: 50%;   
+  transform: translate(-50%, -50%); 
+  width:600px;
+  height:200px;
+  background-color:white;
+}
+
+.usernameC{
+    font-size:25px;
+   font-weight: 300;
+    margin-bottom: 10px;
+    color: lightslategray;
+    width:50%;
+    font-family:'Raleway',sansserif;
+  
+}
+.CommendC{
+    margin-top:10px;
+  font-size: 20px;
+  line-height: 26px;
+  
+   color:#181818;
+   font-family:'Raleway',sansserif;
+}
+.DateC{
+      display:inline;
+      color:#B1B0AC;
+      font-family:'Raleway',sansserif;
+}
+.displayI{
+    display:inline-block;}
+#textCount{
+position: absolute;
+    top: px;
+    left: 73px;
+}
+
+#addC
+{   
+  /*position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  */
+  width:580px;
+  height:210px;
+  margin: 2pt 5pt 3pt;
+   border-radius: 6px;
+}
+
+
+
+#cancelbtn,#signupbtn { width: 40%;
+    font-size: 1em;
+    color: black;
+    background-color: #ccc;
+    border-top-color: initial;
+    border-top-style: none;
+    border-top-width: initial;
+    border-right-color: initial;
+    border-right-style: none;
+    border-right-width: initial;
+    border-bottom-color: initial;
+    border-bottom-style: none;
+    border-bottom-width: initial;
+    border-left-color: initial;
+    border-left-style: none;
+    border-left-width: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    cursor: pointer;
+    padding: 14px 20px;
+    border-radius: 6px;
+   
+}
+#cancelbtn:hover,#signupbtn:hover{
+     color: whitesmoke;
+     background-color: black;
+}
+#cancelbtn{
+    position:relative;
+    margin-left:8%;
+}
+#signupbtn{
+    position:relative;
+    margin-left:4%;
+}
+
+button {
+    background-color:245,245,22;
+    color: lightslategray;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+}
+
+#videoBx{
+   position: absolute;   
+   top: 50%; 
+  left: 50%;   
+  transform: translate(-50%, -50%); 
+  width:600px;
+  height:300px;
+  background-color:white;
+}
+#iframe{
+    height:100%;
+    width:100%;
+}

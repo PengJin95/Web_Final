@@ -1,0 +1,21 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 5, 2017, 11:40:02 AM
+    Author     : wangshuang
+*/
+
+.starts,.starts ul{float:left;}
+.starts{padding-left:16px;padding-top:7px;}
+.starts ul li{width:32px;height:31px;float:left;background:none;padding-right:3px;}
+#pingStar li.on{color:red;}
+
+.starts ul span{display:inline;float:left;padding-left:10px;height:31px;line-height:31p}
+.starts  ul li{list-style-type:none;}  
+  /*why starts is here?*/
+  /*将点去掉*/
+
+#pingStar li{list-style:none; float:left; font-size:30px; margin:5px; color:#ccc; cursor:pointer;}

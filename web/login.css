@@ -1,0 +1,79 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./image/film.jpg");
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card {
+    width: 400px;
+    height: 450px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+}
+
+.input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    margin-left: 39px;
+    margin-right: 39px;
+}
+
+.input:focus {
+    border-color: rgb(86, 174, 247);
+}
+
+#login_icon {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 322px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    margin-left: 39px;
+    margin-right: 39px;
+    color: white;
+    background-color: rgb(86, 174, 247);
+    transition: background-color 0.25s;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(41, 113, 172);
+}
+
+.button:disabled {
+    background-color: lightgrey;
+    cursor: default;
+}
+
+.message {
+    font-size: 12px;
+    color: red;
+    cursor: default;
+}
+
+#register {
+    text-decoration: none;
+    color: rgb(86, 174, 247);
+}

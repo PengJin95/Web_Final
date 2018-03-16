@@ -1,0 +1,300 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+.tran {
+    transition: transform 1s ease-in-out;
+    -webkit-transition: transform 1s ease-in-out;
+}
+
+#welcome {
+    width: 100%;
+    text-align: center;
+    background-image: url("./image/welcome-back.jpg");
+    background-size: cover;
+}
+
+#welcome-title {
+    position: relative;
+    top: 45%;
+    font-size: 76px;
+    font-weight: 400;
+    color: white;
+}
+
+.arrow {
+    position: absolute;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    cursor: pointer;
+}
+
+#arrow1 {
+    left: 50%;
+    top: 90%;
+}
+
+#arrow2 {
+    left: 50%;
+    top: 190%;
+    border-color: black;
+}
+
+#nowplaying {
+    width: 100%;
+    height: 100%;
+}
+
+#blank1 {
+    width: 100%;
+    height: 10%;
+}
+
+#blank2 {
+    float: left;
+    width: 4%;
+    height: 90%;
+}
+
+#blank3 {
+    float: right;
+    width: 4%;
+    height: 90%;
+}
+
+#slides {
+    float: left;
+    width: 60%;
+}
+
+.slide {
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+.slide-img {
+    width: 100%;
+    display: block;
+}
+
+.slide-name {
+    position: relative;
+    margin: 0;
+    top: -52px;
+    left: 14px;
+    color: #F6F6F6;
+    font-size: 24px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 1
+    }
+}
+
+#caption {
+    background-color: #F6F6F6;
+    text-align: center;
+    float: right;
+    width: 28%;
+    height: 80%;
+    font-size: 36px;
+}
+
+#cap-txt1 {
+    position: relative;
+    top: 25%;
+}
+
+#cap-txt2 {
+    position: relative;
+    top: 30%;
+}
+
+#cap-txt3 {
+    position: relative;
+    top: 35%;
+}
+
+#movie-icon {
+    position: absolute;
+    width: 40%;
+    top: 150%;
+    left: 0;
+    z-index: -1;
+}
+
+#caption {
+    background-color: #F6F6F6;
+    text-align: center;
+    float: right;
+    width: 28%;
+    height: 80%;
+    font-size: 36px;
+}
+
+#cap-txt1 {
+    position: relative;
+    top: 25%;
+}
+
+#cap-txt2 {
+    position: relative;
+    top: 30%;
+}
+
+#cap-txt3 {
+    position: relative;
+    top: 35%;
+}
+
+#blank4 {
+    height: 40%;
+    width: 100%;
+    background-image: url("./image/particles_bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.5em;
+}
+
+#recommend {
+    width: 100%;
+    background-image: url("http://subtlepatterns.com/patterns/scribble_light.png");
+}
+
+#recommend1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 40px;
+    background-color: transparent;
+}
+
+#recommend2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 70px;
+    background-color: transparent;
+}
+
+.poster,
+#recommend-title,
+#recommend-more {
+    width: 16%;
+    margin: 0 20px 20px 20px;
+    text-align: center;
+    font-size: 36px;
+    transition: box-shadow .3s ease;
+    -webkit-transition: box-shadow .3s ease;
+    padding: 10px;
+    line-height: 120%;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, .2);
+}
+
+#recom-wrapper {
+    position: relative;
+    top: -40px;
+}
+
+#recommend-title,
+#recommend-more {
+    background-color: rgb(136, 201, 189);
+    color: white;
+    box-shadow: none;
+}
+
+#recommend-more {
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
+}
+
+#recommend-more:hover {
+    background-color: rgb(63, 131, 118);
+}
+
+#recommend-title p {
+    position: relative;
+    top: 25%;
+}
+
+#recommend-more a {
+    position: relative;
+    top: 35%;
+    text-decoration: none;
+    color: white;
+}
+
+#recommend-more a span {
+    transition: font-size .3s ease;
+    -webkit-transition: font-size .3s ease;
+}
+
+#recommend-more:hover a span {
+    font-size: 50px;
+}
+
+.poster-img {
+    width: 100%;
+    display: block;
+}
+
+.poster p {
+    color: rgb(138, 138, 138);
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 110%;
+}
+
+.poster span {
+    font-size: 16px;
+}
+
